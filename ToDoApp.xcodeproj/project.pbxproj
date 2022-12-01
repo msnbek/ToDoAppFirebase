@@ -10,11 +10,15 @@
 		BC0EFBC09C6A7A09445872DB /* Pods_ToDoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35105DBD3324BF928CF0A417 /* Pods_ToDoApp.framework */; };
 		ED33F5352938CCF700FE9D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F5342938CCF700FE9D7F /* AppDelegate.swift */; };
 		ED33F5372938CCF700FE9D7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F5362938CCF700FE9D7F /* SceneDelegate.swift */; };
-		ED33F5392938CCF700FE9D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F5382938CCF700FE9D7F /* ViewController.swift */; };
+		ED33F5392938CCF700FE9D7F /* ViewYourPlans.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F5382938CCF700FE9D7F /* ViewYourPlans.swift */; };
 		ED33F53C2938CCF700FE9D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED33F53A2938CCF700FE9D7F /* Main.storyboard */; };
 		ED33F53E2938CCF900FE9D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED33F53D2938CCF900FE9D7F /* Assets.xcassets */; };
 		ED33F5412938CCF900FE9D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED33F53F2938CCF900FE9D7F /* LaunchScreen.storyboard */; };
 		ED33F5492938CD6000FE9D7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED33F5482938CD6000FE9D7F /* GoogleService-Info.plist */; };
+		ED33F54B2938D0D400FE9D7F /* StringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F54A2938D0D400FE9D7F /* StringModel.swift */; };
+		ED33F54D2938D31C00FE9D7F /* AddPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F54C2938D31C00FE9D7F /* AddPlanViewController.swift */; };
+		ED33F54F2938EA4800FE9D7F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F54E2938EA4800FE9D7F /* DetailViewController.swift */; };
+		ED33F5512938FABC00FE9D7F /* PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F5502938FABC00FE9D7F /* PlanModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +28,16 @@
 		ED33F5312938CCF700FE9D7F /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED33F5342938CCF700FE9D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED33F5362938CCF700FE9D7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED33F5382938CCF700FE9D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED33F5382938CCF700FE9D7F /* ViewYourPlans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewYourPlans.swift; sourceTree = "<group>"; };
 		ED33F53B2938CCF700FE9D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED33F53D2938CCF900FE9D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED33F5402938CCF900FE9D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED33F5422938CCF900FE9D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED33F5482938CD6000FE9D7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED33F54A2938D0D400FE9D7F /* StringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringModel.swift; sourceTree = "<group>"; };
+		ED33F54C2938D31C00FE9D7F /* AddPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanViewController.swift; sourceTree = "<group>"; };
+		ED33F54E2938EA4800FE9D7F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ED33F5502938FABC00FE9D7F /* PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,6 @@
 				04829D477F773165DD1350DF /* Pods-ToDoApp.debug.xcconfig */,
 				207BC56727AE2B1F82FCBDF6 /* Pods-ToDoApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,16 +90,44 @@
 		ED33F5332938CCF700FE9D7F /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				ED33F5342938CCF700FE9D7F /* AppDelegate.swift */,
-				ED33F5362938CCF700FE9D7F /* SceneDelegate.swift */,
-				ED33F5382938CCF700FE9D7F /* ViewController.swift */,
-				ED33F53A2938CCF700FE9D7F /* Main.storyboard */,
-				ED33F53D2938CCF900FE9D7F /* Assets.xcassets */,
-				ED33F53F2938CCF900FE9D7F /* LaunchScreen.storyboard */,
+				EDAF95B329393370000E306B /* Controller */,
+				EDAF95B42939337D000E306B /* Models */,
+				EDAF95B529393387000E306B /* View */,
 				ED33F5422938CCF900FE9D7F /* Info.plist */,
 				ED33F5482938CD6000FE9D7F /* GoogleService-Info.plist */,
 			);
 			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		EDAF95B329393370000E306B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F5362938CCF700FE9D7F /* SceneDelegate.swift */,
+				ED33F5342938CCF700FE9D7F /* AppDelegate.swift */,
+				ED33F5382938CCF700FE9D7F /* ViewYourPlans.swift */,
+				ED33F54C2938D31C00FE9D7F /* AddPlanViewController.swift */,
+				ED33F54E2938EA4800FE9D7F /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EDAF95B42939337D000E306B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F54A2938D0D400FE9D7F /* StringModel.swift */,
+				ED33F5502938FABC00FE9D7F /* PlanModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDAF95B529393387000E306B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F53A2938CCF700FE9D7F /* Main.storyboard */,
+				ED33F53D2938CCF900FE9D7F /* Assets.xcassets */,
+				ED33F53F2938CCF900FE9D7F /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED33F5392938CCF700FE9D7F /* ViewController.swift in Sources */,
+				ED33F54B2938D0D400FE9D7F /* StringModel.swift in Sources */,
+				ED33F5392938CCF700FE9D7F /* ViewYourPlans.swift in Sources */,
 				ED33F5352938CCF700FE9D7F /* AppDelegate.swift in Sources */,
+				ED33F54F2938EA4800FE9D7F /* DetailViewController.swift in Sources */,
+				ED33F54D2938D31C00FE9D7F /* AddPlanViewController.swift in Sources */,
+				ED33F5512938FABC00FE9D7F /* PlanModel.swift in Sources */,
 				ED33F5372938CCF700FE9D7F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
